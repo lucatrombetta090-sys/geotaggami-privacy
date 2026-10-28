@@ -5,27 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy — GeoTaggami</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.6;
-            color: #222;
-            background: #fafafa;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+               max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; background: #fafafa; }
         h1 { color: #1E88E5; border-bottom: 3px solid #1E88E5; padding-bottom: 10px; }
         h2 { color: #1565C0; margin-top: 30px; }
-        h3 { color: #333; }
         .lang-switch { text-align: right; margin-bottom: 20px; }
-        .lang-switch a {
-            padding: 6px 14px;
-            background: #1E88E5;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-left: 6px;
-        }
+        .lang-switch a { padding: 6px 14px; background: #1E88E5; color: white; text-decoration: none; border-radius: 4px; margin-left: 6px; }
         .last-update { font-style: italic; color: #666; }
         ul { padding-left: 22px; }
         code { background: #eee; padding: 2px 6px; border-radius: 3px; }
@@ -39,182 +24,200 @@
 <div class="lang-switch">
     <a href="#italiano">🇮🇹 Italiano</a>
     <a href="#english">🇬🇧 English</a>
+    <a href="#espanol">🇪🇸 Español</a>
 </div>
 
 <!-- ============ ITALIANO ============ -->
 <section id="italiano">
-
 <h1>Privacy Policy — GeoTaggami</h1>
-<p class="last-update">Ultimo aggiornamento: 21 luglio 2026</p>
+<p class="last-update">Ultimo aggiornamento: 28 ottobre 2026</p>
 
-<p>La presente Privacy Policy descrive come l'applicazione mobile <strong>GeoTaggami</strong> ("l'App") tratta le informazioni relative agli utenti. La tua privacy è importante per noi.</p>
+<p>La presente Privacy Policy descrive come l'applicazione mobile <strong>GeoTaggami</strong> ("l'App") tratta le informazioni degli utenti.</p>
 
 <h2>1. Titolare del trattamento</h2>
-<p>
-    <strong>Luca Trombetta</strong><br>
-    Sviluppatore indipendente<br>
-    Roma, Italia<br>
-    Contatto: <a href="mailto:lucatrombetta090@gmail.com">lucatrombetta090@gmail.com</a>
-</p>
+<p><strong>Luca Trombetta</strong> — sviluppatore indipendente, Roma, Italia<br>
+Contatto: <a href="mailto:lucatrombetta090@gmail.com">lucatrombetta090@gmail.com</a></p>
 
-<h2>2. Riepilogo veloce</h2>
+<h2>2. Riepilogo</h2>
 <ul>
-    <li>✅ L'App funziona <strong>al 100% in locale</strong> sul tuo dispositivo</li>
-    <li>✅ <strong>Nessun dato</strong> viene inviato a server proprietari</li>
-    <li>✅ <strong>Nessun account</strong> richiesto</li>
-    <li>✅ <strong>Nessuna pubblicità</strong>, nessun tracking, nessuna analytics</li>
-    <li>✅ <strong>Nessuna raccolta dati</strong> personali</li>
+    <li>✅ L'App funziona <strong>in locale</strong> sul tuo dispositivo</li>
+    <li>✅ <strong>Nessun dato</strong> viene inviato a server dello sviluppatore</li>
+    <li>✅ <strong>Nessun account</strong>, nessuna pubblicità, nessun tracciamento, nessuna analytics</li>
 </ul>
 
 <h2>3. Dati trattati localmente</h2>
-<p>GeoTaggami accede ai seguenti dati esclusivamente sul dispositivo, senza alcuna trasmissione esterna:</p>
 <ul>
-    <li><strong>Foto e video</strong>: letti tramite MediaStore Android per visualizzarli e permettere all'utente di modificarne i metadati di posizione.</li>
-    <li><strong>Metadati EXIF di geolocalizzazione</strong> (latitudine, longitudine): letti dai file multimediali e modificati su richiesta esplicita dell'utente. Le coordinate lette vengono salvate in una cache locale (database sul dispositivo) per velocizzare gli avvii successivi.</li>
-    <li><strong>Posizione dell'utente</strong>: utilizzata esclusivamente per centrare la mappa sulla posizione corrente quando l'utente tocca il pulsante "Trova posizione". Non viene mai memorizzata né trasmessa.</li>
+    <li><strong>Foto e video</strong>: letti tramite MediaStore di Android per mostrarli sulla mappa e permetterti di modificarne la posizione.</li>
+    <li><strong>Coordinate GPS dei media</strong> (metadati EXIF): lette e modificate solo su tua richiesta. Le coordinate lette sono salvate in una cache locale sul dispositivo per velocizzare gli avvii successivi.</li>
+    <li><strong>Posizione del dispositivo</strong>: usata solo per centrare la mappa quando tocchi "Trova la mia posizione". Non viene salvata né trasmessa.</li>
+    <li><strong>Preferenze</strong> (es. promemoria attivo/disattivo, ultima area della mappa): salvate solo sul dispositivo.</li>
 </ul>
 
 <h2>4. Permessi richiesti</h2>
 <ul>
-    <li><code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>: lettura foto e video</li>
-    <li><code>ACCESS_MEDIA_LOCATION</code>: lettura dei tag GPS dai metadati EXIF</li>
-    <li><code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>: solo per centrare la mappa (opzionale)</li>
-    <li><code>INTERNET</code>: esclusivamente per scaricare le tile grafiche della mappa</li>
+    <li><code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>: lettura di foto e video</li>
+    <li><code>ACCESS_MEDIA_LOCATION</code>: lettura della posizione salvata nei media</li>
+    <li><code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>: solo per centrare la mappa (facoltativo)</li>
+    <li><code>POST_NOTIFICATIONS</code>: promemoria settimanale con il numero di foto senza posizione. Il conteggio avviene sul dispositivo e nessun dato viene inviato. Puoi disattivarlo dal menu dell'App o dalle impostazioni di Android (facoltativo)</li>
+    <li><code>INTERNET</code>: download delle immagini della mappa e ricerca delle città</li>
 </ul>
 
 <h2>5. Servizi di terze parti</h2>
-<p>L'App utilizza i seguenti servizi esterni per il solo rendering della mappa:</p>
 <ul>
-    <li><strong>CARTO (CartoDB)</strong> — fornisce le "tile" grafiche della mappa (stile Positron). Vengono trasmesse solo le coordinate della porzione di mappa visualizzata, in forma anonima. Nessun dato personale, nessun file multimediale, nessun identificativo viene inviato. I dati cartografici provengono da OpenStreetMap.</li>
+    <li><strong>CARTO</strong> — fornisce le immagini della mappa (dati OpenStreetMap). Vengono richieste solo le porzioni di mappa visualizzate. <a href="https://carto.com/privacy/">Privacy CARTO</a></li>
+    <li><strong>Nominatim (OpenStreetMap Foundation)</strong> — usato solo quando cerchi una città: viene inviato il testo che digiti. <a href="https://osmfoundation.org/wiki/Privacy_Policy">Privacy OSMF</a></li>
+    <li><strong>Google Play</strong> — l'App può mostrare la finestra di recensione di Google Play (In-App Review). La recensione è gestita interamente da Google secondo le sue norme; l'App non riceve i dati della recensione. <a href="https://policies.google.com/privacy">Privacy Google</a></li>
+    <li><strong>Geocoder di Android</strong> — per individuare la nazione con più foto, l'App può usare il servizio di geocodifica del sistema, che su molti dispositivi è fornito da Google. Vengono inviate coordinate approssimative, senza foto né identificativi.</li>
 </ul>
-<p>
-    Privacy Policy CARTO: <a href="https://carto.com/privacy/">https://carto.com/privacy/</a><br>
-    Privacy Policy OpenStreetMap: <a href="https://osmfoundation.org/wiki/Privacy_Policy">https://osmfoundation.org/wiki/Privacy_Policy</a>
-</p>
 
 <h2>6. Dati NON trattati</h2>
 <ul>
-    <li>❌ Nessun identificativo pubblicitario (AAID)</li>
-    <li>❌ Nessun dato di analytics (Firebase, Google Analytics, ecc.)</li>
-    <li>❌ Nessun crash reporting SDK di terze parti</li>
-    <li>❌ Nessun social login</li>
-    <li>❌ Nessun accesso a contatti, calendario, chiamate, SMS</li>
+    <li>❌ Nessun identificativo pubblicitario, analytics o crash reporting di terze parti</li>
     <li>❌ Nessun caricamento di foto o video su alcun server</li>
+    <li>❌ Nessun accesso a contatti, calendario, chiamate o SMS</li>
 </ul>
 
-<h2>7. Sicurezza</h2>
-<p>Tutti i dati (foto, video, coordinate e cache) restano localmente sul tuo dispositivo. Le richieste alle tile della mappa (CARTO) avvengono tramite HTTPS e contengono solo le coordinate del riquadro visibile. Non viene mantenuta alcuna comunicazione persistente con server esterni.</p>
+<h2>7. Conservazione e cancellazione</h2>
+<p>Cache e preferenze restano sul dispositivo fino alla cancellazione dei dati dell'App o alla sua disinstallazione.</p>
 
 <h2>8. Diritti dell'utente</h2>
-<p>Ai sensi del GDPR (Regolamento UE 2016/679) hai diritto a:</p>
-<ul>
-    <li>Accesso ai tuoi dati (che risiedono localmente sul tuo dispositivo)</li>
-    <li>Rettifica e cancellazione (disinstallando l'App)</li>
-    <li>Opposizione al trattamento (non usando l'App)</li>
-    <li>Presentare reclamo al Garante per la protezione dei dati personali</li>
-</ul>
+<p>Ai sensi del GDPR puoi chiedere informazioni scrivendo all'indirizzo sopra e presentare reclamo al Garante per la protezione dei dati personali.</p>
 
-<h2>9. Retention e cancellazione</h2>
-<p>Poiché l'App non memorizza dati su server esterni, non esiste alcuna retention lato server. I dati locali (cache delle coordinate, preferenze) restano sul dispositivo fino alla cancellazione dei dati dell'app o alla disinstallazione. Per cancellare completamente ogni traccia, disinstalla l'App dal tuo dispositivo.</p>
+<h2>9. Minori</h2>
+<p>L'App è destinata a utenti di almeno 16 anni.</p>
 
-<h2>10. Bambini</h2>
-<p>L'App è destinata a utenti di età pari o superiore ai 13 anni. Non raccogliamo consapevolmente dati da minori di 13 anni.</p>
-
-<h2>11. Modifiche alla Privacy Policy</h2>
-<p>Ci riserviamo il diritto di aggiornare questa Privacy Policy. Le modifiche saranno pubblicate su questa pagina con nuova data di aggiornamento.</p>
-
-<h2>12. Contatti</h2>
-<p>Per qualsiasi domanda sulla privacy: <a href="mailto:lucatrombetta090@gmail.com">lucatrombetta090@gmail.com</a></p>
-
+<h2>10. Modifiche</h2>
+<p>Eventuali modifiche saranno pubblicate su questa pagina con nuova data.</p>
 </section>
 
 <hr>
 
 <!-- ============ ENGLISH ============ -->
 <section id="english">
-
 <h1>Privacy Policy — GeoTaggami</h1>
-<p class="last-update">Last updated: July 21, 2026</p>
+<p class="last-update">Last updated: October 28, 2026</p>
 
-<p>This Privacy Policy describes how the <strong>GeoTaggami</strong> mobile application ("the App") handles user information. Your privacy is important to us.</p>
+<p>This Privacy Policy describes how the <strong>GeoTaggami</strong> mobile app ("the App") handles user information.</p>
 
-<h2>1. Data Controller</h2>
-<p>
-    <strong>Luca Trombetta</strong><br>
-    Independent developer<br>
-    Rome, Italy<br>
-    Contact: <a href="mailto:lucatrombetta090@gmail.com">lucatrombetta090@gmail.com</a>
-</p>
+<h2>1. Data controller</h2>
+<p><strong>Luca Trombetta</strong> — independent developer, Rome, Italy<br>
+Contact: <a href="mailto:lucatrombetta090@gmail.com">lucatrombetta090@gmail.com</a></p>
 
-<h2>2. Quick summary</h2>
+<h2>2. Summary</h2>
 <ul>
-    <li>✅ The App runs <strong>100% locally</strong> on your device</li>
-    <li>✅ <strong>No data</strong> is sent to proprietary servers</li>
-    <li>✅ <strong>No account</strong> required</li>
-    <li>✅ <strong>No ads</strong>, no tracking, no analytics</li>
-    <li>✅ <strong>No personal data</strong> collection</li>
+    <li>✅ The App runs <strong>locally</strong> on your device</li>
+    <li>✅ <strong>No data</strong> is sent to the developer's servers</li>
+    <li>✅ <strong>No account</strong>, no ads, no tracking, no analytics</li>
 </ul>
 
 <h2>3. Data processed locally</h2>
-<p>GeoTaggami accesses the following data only on the device, without any external transmission:</p>
 <ul>
-    <li><strong>Photos and videos</strong>: read via Android MediaStore to display them and let the user edit their location metadata.</li>
-    <li><strong>EXIF geolocation metadata</strong> (latitude, longitude): read from media files and modified upon explicit user request. Read coordinates are stored in a local cache (on-device database) to speed up subsequent launches.</li>
-    <li><strong>User location</strong>: used exclusively to center the map on the current position when the user taps the "Locate" button. Never stored nor transmitted.</li>
+    <li><strong>Photos and videos</strong>: read through Android MediaStore to show them on the map and let you edit their location.</li>
+    <li><strong>Media GPS coordinates</strong> (EXIF metadata): read and changed only at your request. Read coordinates are stored in a local cache on the device to speed up later launches.</li>
+    <li><strong>Device location</strong>: used only to center the map when you tap "Find my location". Never stored or sent.</li>
+    <li><strong>Preferences</strong> (e.g. reminder on/off, last map area): stored on the device only.</li>
 </ul>
 
-<h2>4. Permissions requested</h2>
+<h2>4. Permissions</h2>
 <ul>
     <li><code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>: reading photos and videos</li>
-    <li><code>ACCESS_MEDIA_LOCATION</code>: reading GPS tags from EXIF metadata</li>
+    <li><code>ACCESS_MEDIA_LOCATION</code>: reading the location stored in media</li>
     <li><code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>: only to center the map (optional)</li>
-    <li><code>INTERNET</code>: exclusively to download map graphic tiles</li>
+    <li><code>POST_NOTIFICATIONS</code>: weekly reminder with the number of photos without location. The count happens on the device and no data is sent. You can turn it off from the App menu or Android settings (optional)</li>
+    <li><code>INTERNET</code>: downloading map images and searching cities</li>
 </ul>
 
 <h2>5. Third-party services</h2>
-<p>The App uses the following external services solely for map rendering:</p>
 <ul>
-    <li><strong>CARTO (CartoDB)</strong> — provides the map graphic tiles (Positron style). Only the coordinates of the visible map portion are transmitted, anonymously. No personal data, no media files, no identifiers are sent. Map data comes from OpenStreetMap.</li>
+    <li><strong>CARTO</strong> — provides map images (OpenStreetMap data). Only the visible map tiles are requested. <a href="https://carto.com/privacy/">CARTO privacy</a></li>
+    <li><strong>Nominatim (OpenStreetMap Foundation)</strong> — used only when you search for a city: the text you type is sent. <a href="https://osmfoundation.org/wiki/Privacy_Policy">OSMF privacy</a></li>
+    <li><strong>Google Play</strong> — the App may show the Google Play review dialog (In-App Review). Reviews are handled entirely by Google under its policies; the App does not receive review data. <a href="https://policies.google.com/privacy">Google privacy</a></li>
+    <li><strong>Android Geocoder</strong> — to find the country with the most photos, the App may use the system geocoding service, provided by Google on many devices. Approximate coordinates are sent, with no photos or identifiers.</li>
 </ul>
-<p>
-    CARTO Privacy Policy: <a href="https://carto.com/privacy/">https://carto.com/privacy/</a><br>
-    OpenStreetMap Privacy Policy: <a href="https://osmfoundation.org/wiki/Privacy_Policy">https://osmfoundation.org/wiki/Privacy_Policy</a>
-</p>
 
 <h2>6. Data NOT processed</h2>
 <ul>
-    <li>❌ No advertising identifier (AAID)</li>
-    <li>❌ No analytics data (Firebase, Google Analytics, etc.)</li>
-    <li>❌ No third-party crash reporting SDK</li>
-    <li>❌ No social login</li>
-    <li>❌ No access to contacts, calendar, calls, SMS</li>
+    <li>❌ No advertising ID, analytics or third-party crash reporting</li>
     <li>❌ No upload of photos or videos to any server</li>
+    <li>❌ No access to contacts, calendar, calls or SMS</li>
 </ul>
 
-<h2>7. Security</h2>
-<p>All data (photos, videos, coordinates and cache) remains locally on your device. Requests to the map tiles (CARTO) are made via HTTPS and contain only the coordinates of the visible tile. No persistent communication with external servers is maintained.</p>
+<h2>7. Retention and deletion</h2>
+<p>Cache and preferences stay on the device until you clear the App data or uninstall it.</p>
 
-<h2>8. User rights</h2>
-<p>Under the GDPR (EU Regulation 2016/679) you have the right to:</p>
+<h2>8. Your rights</h2>
+<p>Under the GDPR you can request information at the address above and lodge a complaint with your data protection authority.</p>
+
+<h2>9. Children</h2>
+<p>The App is intended for users aged 16 and over.</p>
+
+<h2>10. Changes</h2>
+<p>Any changes will be posted on this page with a new date.</p>
+</section>
+
+<hr>
+
+<!-- ============ ESPAÑOL ============ -->
+<section id="espanol">
+<h1>Política de privacidad — GeoTaggami</h1>
+<p class="last-update">Última actualización: 28 de octubre de 2026</p>
+
+<p>Esta Política de privacidad describe cómo la aplicación móvil <strong>GeoTaggami</strong> ("la App") trata la información de los usuarios.</p>
+
+<h2>1. Responsable del tratamiento</h2>
+<p><strong>Luca Trombetta</strong> — desarrollador independiente, Roma, Italia<br>
+Contacto: <a href="mailto:lucatrombetta090@gmail.com">lucatrombetta090@gmail.com</a></p>
+
+<h2>2. Resumen</h2>
 <ul>
-    <li>Access your data (which is stored locally on your device)</li>
-    <li>Rectification and erasure (by uninstalling the App)</li>
-    <li>Object to processing (by not using the App)</li>
-    <li>Lodge a complaint with the Italian Data Protection Authority</li>
+    <li>✅ La App funciona <strong>en local</strong> en tu dispositivo</li>
+    <li>✅ <strong>Ningún dato</strong> se envía a servidores del desarrollador</li>
+    <li>✅ <strong>Sin cuenta</strong>, sin publicidad, sin seguimiento, sin analíticas</li>
 </ul>
 
-<h2>9. Data retention and deletion</h2>
-<p>Since the App does not store data on external servers, there is no server-side retention. Local data (coordinate cache, preferences) remains on the device until app data is cleared or the app is uninstalled. To completely delete any traces, uninstall the App from your device.</p>
+<h2>3. Datos tratados en local</h2>
+<ul>
+    <li><strong>Fotos y vídeos</strong>: se leen mediante MediaStore de Android para mostrarlos en el mapa y permitirte cambiar su ubicación.</li>
+    <li><strong>Coordenadas GPS de los archivos</strong> (metadatos EXIF): se leen y modifican solo cuando tú lo pides. Las coordenadas leídas se guardan en una caché local para acelerar los siguientes inicios.</li>
+    <li><strong>Ubicación del dispositivo</strong>: se usa solo para centrar el mapa cuando tocas "Encontrar mi ubicación". No se guarda ni se envía.</li>
+    <li><strong>Preferencias</strong> (p. ej. recordatorio activado, última zona del mapa): se guardan solo en el dispositivo.</li>
+</ul>
 
-<h2>10. Children</h2>
-<p>The App is intended for users aged 13 and above. We do not knowingly collect data from children under 13.</p>
+<h2>4. Permisos</h2>
+<ul>
+    <li><code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>: lectura de fotos y vídeos</li>
+    <li><code>ACCESS_MEDIA_LOCATION</code>: lectura de la ubicación guardada en los archivos</li>
+    <li><code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>: solo para centrar el mapa (opcional)</li>
+    <li><code>POST_NOTIFICATIONS</code>: recordatorio semanal con el número de fotos sin ubicación. El recuento se hace en el dispositivo y no se envía ningún dato. Puedes desactivarlo desde el menú de la App o los ajustes de Android (opcional)</li>
+    <li><code>INTERNET</code>: descarga de las imágenes del mapa y búsqueda de ciudades</li>
+</ul>
 
-<h2>11. Changes to the Privacy Policy</h2>
-<p>We reserve the right to update this Privacy Policy. Changes will be posted on this page with a new update date.</p>
+<h2>5. Servicios de terceros</h2>
+<ul>
+    <li><strong>CARTO</strong> — proporciona las imágenes del mapa (datos de OpenStreetMap). Solo se piden las zonas visibles. <a href="https://carto.com/privacy/">Privacidad CARTO</a></li>
+    <li><strong>Nominatim (OpenStreetMap Foundation)</strong> — solo cuando buscas una ciudad: se envía el texto que escribes. <a href="https://osmfoundation.org/wiki/Privacy_Policy">Privacidad OSMF</a></li>
+    <li><strong>Google Play</strong> — la App puede mostrar la ventana de reseñas de Google Play (In-App Review). Las reseñas las gestiona Google según sus normas; la App no recibe sus datos. <a href="https://policies.google.com/privacy">Privacidad Google</a></li>
+    <li><strong>Geocoder de Android</strong> — para encontrar el país con más fotos, la App puede usar el servicio de geocodificación del sistema, proporcionado por Google en muchos dispositivos. Se envían coordenadas aproximadas, sin fotos ni identificadores.</li>
+</ul>
 
-<h2>12. Contact</h2>
-<p>For any privacy questions: <a href="mailto:lucatrombetta090@gmail.com">lucatrombetta090@gmail.com</a></p>
+<h2>6. Datos que NO se tratan</h2>
+<ul>
+    <li>❌ Ningún identificador publicitario, analíticas ni informes de errores de terceros</li>
+    <li>❌ Ninguna subida de fotos o vídeos a ningún servidor</li>
+    <li>❌ Ningún acceso a contactos, calendario, llamadas o SMS</li>
+</ul>
 
+<h2>7. Conservación y eliminación</h2>
+<p>La caché y las preferencias permanecen en el dispositivo hasta que borres los datos de la App o la desinstales.</p>
+
+<h2>8. Tus derechos</h2>
+<p>Según el RGPD puedes solicitar información en la dirección indicada y presentar una reclamación ante tu autoridad de protección de datos.</p>
+
+<h2>9. Menores</h2>
+<p>La App está dirigida a usuarios de 16 años o más.</p>
+
+<h2>10. Cambios</h2>
+<p>Cualquier cambio se publicará en esta página con una nueva fecha.</p>
 </section>
 
 <footer>
